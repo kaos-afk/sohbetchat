@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canlı Sohbet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Canlı Sohbete Katıl</h2>
+    <input id="username" type="text" placeholder="İsminizi girin..." />
+    <button id="join-btn">Katıl</button>
+  </div>
+
+  <div id="chat-screen" style="display:none;">
+    <div id="chat-box"></div>
+    <form id="chat-form">
+      <input id="msg" autocomplete="off" placeholder="Mesaj yaz..." />
+      <button>Gönder</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
